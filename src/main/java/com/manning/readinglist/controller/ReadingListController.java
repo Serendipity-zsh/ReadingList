@@ -1,5 +1,7 @@
-package com.manning.readinglist;
+package com.manning.readinglist.controller;
 
+import com.manning.readinglist.dao.ReadingListRepository;
+import com.manning.readinglist.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +16,8 @@ import java.util.List;
 public class ReadingListController {
 
     private ReadingListRepository readingListRepository;
+
+    //private static final String reader = "craig";
 
     @Autowired
     public ReadingListController(ReadingListRepository readingListRepository) {

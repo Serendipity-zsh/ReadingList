@@ -1,4 +1,4 @@
-package com.manning.readinglist;
+package com.manning.readinglist.condition;
 
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 
 /**
- * 
+ *
  */
 public class JdbcTemplateCondition implements Condition {
 
